@@ -11,18 +11,101 @@
 
 <body>
     <!-- header -->
-     <header>
+     <header class="flex items-center justify-between px-10 py-2 bg-blue-100 shadow-md fixed top-0 left-0 right-0 z-50">
+        <div class="bg-blue-500 h-[60px] w-[60px] rounded-full bg-[url(img/nailong.jpeg)] bg-cover"></div>
+        <nav>
+            <ul class="flex space-x-5">
+               <li class="text-black border px-[20px] py-[5px] rounded-[10px] font-[500]">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="text-black border px-[20px] py-[5px] rounded-[10px] font-[500]">
+                    <a href="#profile">Our Profile</a>
+                </li>
+                <li class="text-black border px-[20px] py-[5px] rounded-[10px] font-[500]">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li class="text-black border px-[20px] py-[5px] rounded-[10px] font-[500]">
+                    <a href="#msg">Message Us</a>
+                </li>
+        </nav>
 
      </header>
 
      <!-- main -->
      <main>
+        <!-- home -->
+        <section id="home" class="mt-[90px] bg-white shadow-md flex flex-col items-center">
+            <h2 class="text-xl font-[500] mb-2" id="welcome-message"></h2>
+            <p>Ini adalah website latihan pertama</p>
+            <img src="img/homeport.png" alt="portofolio website" class="w-[400px] pb-5">
+            <!-- 1366*578 overflow -->
+        </section>
+
+        <!-- our profile -->
+        <section id="profile" class="py-5 bg-blue-100 shadow-md flex flex-col items-center">
+            <h2 class="text-xl font-[500] mb-2">Our Profile</h2>
+            <ul class="list-disc">
+                <li> Experienced in UI/UX Design</li>
+                <li> Interested in Project Managements</li>
+                <li> Skilled in SQL</li>
+            </ul>
+        </section>
+
+        <!-- portfolio -->
+        <section id="portfolio" class="py-5 bg-white shadow-md flex flex-col items-center">
+            <h2 class="text-xl font-[500] mb-2">Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl px-4">
+                <div class="bg-blue-100 shadow-md p-4 rounded-[5px]">
+                    <img src="img/homeport.png" alt="Portfolio 1" class="rounded-[5px] mb-3">
+                    <h3 class="font-semibold">Portfolio KlinikConnect</h3>
+                    <p>Laravel-based clinic portal prototype from case study.</p>
+                </div>
+                <div class="bg-blue-100 shadow-md p-4 rounded-[5px]">
+                    <img src="img/port2.png" alt="Portfolio 2" class="rounded-[5px] mb-3">
+                    <h3 class="font-semibold">Portfolio Pusat Dokumentasi</h3>
+                    <p>Laravel-based documentation management website.</p>
+                </div>
+                <div class="bg-blue-100 shadow-md p-4 rounded-[5px]">
+                    <img src="img/port3.png" alt="Portfolio 3" class="rounded-[5px] mb-3">
+                    <h3 class="font-semibold">Portfolio UI/UX DIESNAT</h3>
+                    <p> Mobile app prototype to support Indonesian farmers with agricultural information and digital tools.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- msg us -->
+        <section id="msg" class="py-5 bg-white shadow-md flex flex-col items-center">
+            <h2 class="text-xl font-[500] mb-2">Message Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 w-full max-w-5xl" >
+                <div class="bg-blue-100 shadow-md p-4 rounded-[5px]">
+                    <form action="" class="space-y-3">
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" name="name" class="border px-2 py-1 rounded-md" placeholder="Masukkan nama Anda">
+                        <br>
+                        <label for="date">Tanggal Lahir:</label>
+                        <input type="date" id="date" name="date" class="border px-2 py-1 rounded-md">
+                        <br>
+                        <label for="gender">Jenis Kelamin:</label>
+                        <input type="radio" id="male" name="gender" value="laki-laki">Laki-laki
+                        <input type="radio" id="female" name="gender" value="perempuan">Perempuan
+                        <br>
+                        <label for="notes">Pesan:</label>
+                        <textarea name="notes" id="notes" rows="4" class="border border px-2 py-1 rounded-md w-full"></textarea>
+                        <br>
+                        <button type="button" onclick="sendMessage()" class="bg-blue-500 text-white px-4 py-2 rounded-md mt-2 w-full">Send</button>
+                    </form>
+                </div>
+                <div class="bg-blue-100 shadow-md p-4 rounded-[5px]">
+                    <div id="result"></div>
+                </div>
+            </div>
+        </section>
 
      </main>
 
      <!-- footer -->
-     <footer>
-
+     <footer class="text-center py-4 bg-white shadow-md">
+        <span>2025 Portfolio. All rights reserved.</span>
      </footer>
 
     <!-- js external -->
