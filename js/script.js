@@ -5,7 +5,7 @@ function welcomeUser() {
 };
 
 
-// welcomeUser()
+welcomeUser()
 
 function sendMessage() {
     const name = document.getElementById('name').value;

@@ -34,7 +34,8 @@
      <!-- main -->
      <main>
         <!-- home -->
-        <section id="home" class="mt-[90px] bg-white shadow-md flex flex-col items-center">
+        <section id="home" class="mt-[90px] bg-white shadow-md flex flex-col items-center scroll-mt-[90px]">
+
             <h2 class="text-xl font-[500] mb-2" id="welcome-message"></h2>
             <p>Ini adalah website latihan pertama</p>
             <img src="img/homeport.png" alt="portofolio website" class="w-[400px] pb-5">
@@ -42,7 +43,7 @@
         </section>
 
         <!-- our profile -->
-        <section id="profile" class="py-5 bg-blue-100 shadow-md flex flex-col items-center">
+        <section id="profile" class="py-5 bg-blue-100 shadow-md flex flex-col items-center scroll-mt-[90px]">
             <h2 class="text-xl font-[500] mb-2">Our Profile</h2>
             <ul class="list-disc">
                 <li> Experienced in UI/UX Design</li>
@@ -52,7 +53,7 @@
         </section>
 
         <!-- portfolio -->
-        <section id="portfolio" class="py-5 bg-white shadow-md flex flex-col items-center">
+        <section id="portfolio" class="py-5 bg-white shadow-md flex flex-col items-center scroll-mt-[90px]">
             <h2 class="text-xl font-[500] mb-2">Portfolio</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl px-4">
                 <div class="bg-blue-100 shadow-md p-4 rounded-[5px]">
@@ -74,10 +75,10 @@
         </section>
 
         <!-- msg us -->
-        <section id="msg" class="py-5 bg-white shadow-md flex flex-col items-center">
+        <section id="msg" class="py-5 bg-blue-100 shadow-md flex flex-col items-center scroll-mt-[90px]">
             <h2 class="text-xl font-[500] mb-2">Message Us</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 w-full max-w-5xl" >
-                <div class="bg-blue-100 shadow-md p-4 rounded-[5px]">
+                <div class="bg-white shadow-md p-4 rounded-[5px]">
                     <form action="" class="space-y-3">
                         <label for="name">Nama:</label>
                         <input type="text" id="name" name="name" class="border px-2 py-1 rounded-md" placeholder="Masukkan nama Anda">
@@ -95,7 +96,7 @@
                         <button type="button" onclick="sendMessage()" class="bg-blue-500 text-white px-4 py-2 rounded-md mt-2 w-full">Send</button>
                     </form>
                 </div>
-                <div class="bg-blue-100 shadow-md p-4 rounded-[5px]">
+                <div class="bg-white shadow-md p-4 rounded-[5px]">
                     <div id="result"></div>
                 </div>
             </div>
